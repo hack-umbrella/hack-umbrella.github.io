@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="安全周刊（第53期） 安全动态： [信安之路]Linux 闯关游戏之通关秘籍 https://mp.weixin.qq.com/s/7N--mAlG2o4ixfpHyUAc_A [信安之路]Linux 闯关游戏之通关秘籍续 https://mp.weixin.qq.com/s/MnmXvDkaRQVCxFRUYHukmg [黑白之道]sql注入入门之mysql布尔型盲注 https://mp.we">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/08/19/hongri/53/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="安全周刊（第53期） 安全动态： [信安之路]Linux 闯关游戏之通关秘籍 https://mp.weixin.qq.com/s/7N--mAlG2o4ixfpHyUAc_A [信安之路]Linux 闯关游戏之通关秘籍续 https://mp.weixin.qq.com/s/MnmXvDkaRQVCxFRUYHukmg [黑白之道]sql注入入门之mysql布尔型盲注 https://mp.we">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-19T07:05:45.953Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="安全周刊（第53期） 安全动态： [信安之路]Linux 闯关游戏之通关秘籍 https://mp.weixin.qq.com/s/7N--mAlG2o4ixfpHyUAc_A [信安之路]Linux 闯关游戏之通关秘籍续 https://mp.weixin.qq.com/s/MnmXvDkaRQVCxFRUYHukmg [黑白之道]sql注入入门之mysql布尔型盲注 https://mp.we">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hongri/53" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/19/hongri/53/" class="article-date">
+  <time datetime="2019-08-19T10:50:45.949Z" itemprop="datePublished">2019-08-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="安全周刊"><a href="#安全周刊" class="headerlink" title="安全周刊"></a>安全周刊</h1><p>（第53期）</p>
+<p><strong>安全动态：</strong></p>
+<p>[信安之路]Linux 闯关游戏之通关秘籍 <a href="https://mp.weixin.qq.com/s/7N--mAlG2o4ixfpHyUAc_A" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/7N--mAlG2o4ixfpHyUAc_A</a></p>
+<p>[信安之路]Linux 闯关游戏之通关秘籍续 <a href="https://mp.weixin.qq.com/s/MnmXvDkaRQVCxFRUYHukmg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/MnmXvDkaRQVCxFRUYHukmg</a></p>
+<p>[黑白之道]sql注入入门之mysql布尔型盲注 <a href="https://mp.weixin.qq.com/s/u6VjUf0FgeWG8EGX9JUy2A" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/u6VjUf0FgeWG8EGX9JUy2A</a></p>
+<p>[合天智汇]Weblogic (下) <a href="https://mp.weixin.qq.com/s/8hzrPebe_XRVoPDtEW4gUg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/8hzrPebe_XRVoPDtEW4gUg</a></p>
+<p><strong>安全工具：</strong><br>[KACK学习呀]2018 BlackHat 黑客大会工具分享 <a href="https://mp.weixin.qq.com/s/oh_fU7uW-N9vAEUXf-PNKw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/oh_fU7uW-N9vAEUXf-PNKw</a></p>
+<p>渗透测试神器Burp Suite现已推出2.0测试版——版 <a href="https://www.secdic.com/go/21689.html" target="_blank" rel="noopener">https://www.secdic.com/go/21689.html</a></p>
+<p>CloudMapper：一款帮助你分析Amazon Web Services环境安全性的强大工具——具 <a href="https://www.secdic.com/go/21688.html" target="_blank" rel="noopener">https://www.secdic.com/go/21688.html</a></p>
+<p><strong>攻防对抗：</strong></p>
+<p>IDA F5 在 CTF逆向中的坑——坑 <a href="https://www.secdic.com/go/21681.html" target="_blank" rel="noopener">https://www.secdic.com/go/21681.html</a></p>
+<p>DOM XSS的三种常见案例介绍——绍 <a href="https://www.secdic.com/go/21677.html" target="_blank" rel="noopener">https://www.secdic.com/go/21677.html</a></p>
+<p>你说安全就安全？对红芯浏览器的一次安全测试——试 <a href="https://www.secdic.com/go/21678.html" target="_blank" rel="noopener">https://www.secdic.com/go/21678.html</a></p>
+<p>通过Unquoted service Path进行Windows权限提升——升 <a href="https://www.secdic.com/go/21679.html" target="_blank" rel="noopener">https://www.secdic.com/go/21679.html</a></p>
+<p>看我如何hack BlackHat：使用BCard API枚举注册与会者——者 <a href="https://www.secdic.com/go/21687.html" target="_blank" rel="noopener">https://www.secdic.com/go/21687.html</a></p>
+<p><strong>安全运维：</strong></p>
+<p>大数据时代下的隐私保护（三）——） <a href="https://www.secdic.com/go/21683.html" target="_blank" rel="noopener">https://www.secdic.com/go/21683.html</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/19/hongri/53/" data-id="cjzia6wm9001a46wsvpdm83na" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/08/19/hongri/54/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/19/hongri/52/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/19/hongri/images/安全周刊：/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/94/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/93/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/92/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

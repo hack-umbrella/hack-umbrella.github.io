@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="安全周刊（第87期） 安全动态： [Security_week] 文本编辑器Vim/Neovim被曝任意代码执行漏洞 https://mp.weixin.qq.com/s/b1a8g5cU6FIoW-ur3sgpYw [Security_week] 渗透测试信息收集心得分享 https://mp.weixin.qq.com/s/pprqACosIunwtN-u7qd6rg [Security_we">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/08/19/hongri/87/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="安全周刊（第87期） 安全动态： [Security_week] 文本编辑器Vim/Neovim被曝任意代码执行漏洞 https://mp.weixin.qq.com/s/b1a8g5cU6FIoW-ur3sgpYw [Security_week] 渗透测试信息收集心得分享 https://mp.weixin.qq.com/s/pprqACosIunwtN-u7qd6rg [Security_we">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-19T03:39:41.899Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="安全周刊（第87期） 安全动态： [Security_week] 文本编辑器Vim/Neovim被曝任意代码执行漏洞 https://mp.weixin.qq.com/s/b1a8g5cU6FIoW-ur3sgpYw [Security_week] 渗透测试信息收集心得分享 https://mp.weixin.qq.com/s/pprqACosIunwtN-u7qd6rg [Security_we">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hongri/87" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/19/hongri/87/" class="article-date">
+  <time datetime="2019-08-19T10:50:46.315Z" itemprop="datePublished">2019-08-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="安全周刊"><a href="#安全周刊" class="headerlink" title="安全周刊"></a>安全周刊</h1><p>（第87期）</p>
+<p><strong>安全动态：</strong></p>
+<p>[Security_week] 文本编辑器Vim/Neovim被曝任意代码执行漏洞 <a href="https://mp.weixin.qq.com/s/b1a8g5cU6FIoW-ur3sgpYw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/b1a8g5cU6FIoW-ur3sgpYw</a></p>
+<p>[Security_week] 渗透测试信息收集心得分享 <a href="https://mp.weixin.qq.com/s/pprqACosIunwtN-u7qd6rg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/pprqACosIunwtN-u7qd6rg</a></p>
+<p>[Security_week] Vim编辑器本地代码执行漏洞预警（CVE-2019-12735）<a href="https://mp.weixin.qq.com/s/I1QXoD_617rJt8xSE5-s9w" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/I1QXoD_617rJt8xSE5-s9w</a></p>
+<p>[Security_week] 信息安全风险处置浅析 <a href="https://mp.weixin.qq.com/s/K-pFXtXRaVxs8cgPIEgvqQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/K-pFXtXRaVxs8cgPIEgvqQ</a></p>
+<p>[Security_week] 企业网络安全之入侵检测数据分析 <a href="https://mp.weixin.qq.com/s/pQrTs406o9aZTdetzJJeMA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/pQrTs406o9aZTdetzJJeMA</a></p>
+<p>[Security_week] 入侵相关汇总 <a href="https://mp.weixin.qq.com/s/C2dVTNeR1zSZigORiXAUAg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/C2dVTNeR1zSZigORiXAUAg</a></p>
+<p>[Security_week] 网络安全事件管理和应急响应法规依据 <a href="https://mp.weixin.qq.com/s/irBXuwTUAhxcxyk8ua-SPw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/irBXuwTUAhxcxyk8ua-SPw</a></p>
+<p>[Security_week] 企业网络安全之入侵检测数据模型 <a href="https://mp.weixin.qq.com/s/LENopjrmZJyBg4u2y0Hfog" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/LENopjrmZJyBg4u2y0Hfog</a></p>
+<p><strong>Web安全:</strong></p>
+<p>[Web_Security] Mysql 高级盲注技巧之时间盲注 <a href="https://mp.weixin.qq.com/s/vMN-j7_JXV8jAETN8e-xPA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/vMN-j7_JXV8jAETN8e-xPA</a></p>
+<p>[Web_Security] MSSQL注入的高级安全技术 <a href="https://mp.weixin.qq.com/s/q8r0zX6ZKYCFvitranSkHw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/q8r0zX6ZKYCFvitranSkHw</a></p>
+<p>[Web_Security] 让你更容易学会sql注入漏洞利用 <a href="https://mp.weixin.qq.com/s/onzCRi8wzhxCEwvwz1SoLA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/onzCRi8wzhxCEwvwz1SoLA</a></p>
+<p>[Web_Security] 漏洞挖掘之信息收集 <a href="https://mp.weixin.qq.com/s/aBMZpFy-4cwb1AwxhlcXQQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/aBMZpFy-4cwb1AwxhlcXQQ</a></p>
+<p><strong>渗透测试：</strong></p>
+<p>[Penetration_test] 基于 MSF 发现内网存活主机第三季 <a href="https://mp.weixin.qq.com/s/rlnBthU_8XIvk5-JV817MA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/rlnBthU_8XIvk5-JV817MA</a></p>
+<p>[Penetration_test] Apache Tika命令注入漏洞挖掘 <a href="https://mp.weixin.qq.com/s/wwGCiiu--BW_hnRxqobbkw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/wwGCiiu--BW_hnRxqobbkw</a></p>
+<p>[Penetration_test] DataCon 的 DNS 恶意流量检查一题回顾 <a href="https://mp.weixin.qq.com/s/M-J4FhGA5zg1WZCA9-Houg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/M-J4FhGA5zg1WZCA9-Houg</a></p>
+<p>[Penetration_test] 漏洞复现-快速开启RMI&amp;&amp;LDAP <a href="https://mp.weixin.qq.com/s/TuQWvyro5vphyeZCAo_Y6g" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/TuQWvyro5vphyeZCAo_Y6g</a></p>
+<p>[Penetration_test] 记一次获取远程桌面历程 <a href="https://mp.weixin.qq.com/s/Y5rwj7Tl2IldzMTYc7x8xg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/Y5rwj7Tl2IldzMTYc7x8xg</a></p>
+<p>[Penetration_test] 记一次渗透挖洞提权实战 <a href="https://mp.weixin.qq.com/s/03HaEnYD5pUEgkX_YK3B_Q" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/03HaEnYD5pUEgkX_YK3B_Q</a></p>
+<p><strong>安全工具：</strong></p>
+<p>[Security_tools] SPARTA - 网络基础设施渗透测试工具 <a href="https://mp.weixin.qq.com/s/_VTJk7eOE4ptWxFF1UZdkA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/_VTJk7eOE4ptWxFF1UZdkA</a></p>
+<p>[Security_tools] Osmedeus：用于侦察和漏洞扫描的全自动安全工具 <a href="https://mp.weixin.qq.com/s/2SHRrURIdPSGIpTtqFJR5Q" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/2SHRrURIdPSGIpTtqFJR5Q</a></p>
+<p>[Security_tools] Windows、Mac和Linux的最佳数据恢复软件 <a href="https://mp.weixin.qq.com/s/YFSgHdArOjte4Bvi-uKhdw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/YFSgHdArOjte4Bvi-uKhdw</a></p>
+<p><strong>代码审计：</strong></p>
+<p>[Code_audit] 对于TPCMF框架的一次代码审计 <a href="https://mp.weixin.qq.com/s/4On_ez8aQ1yeDz9f_9jhew" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/4On_ez8aQ1yeDz9f_9jhew</a></p>
+<p>[Code_audit] PHP代码审计笔记 <a href="https://mp.weixin.qq.com/s/aSnID9N_niaqyZi35y4EJQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/aSnID9N_niaqyZi35y4EJQ</a></p>
+<p>[Code_audit] ThinkPHP5漏洞分析之代码执行（二） <a href="https://mp.weixin.qq.com/s/k1r3UG56vOeHme49WueC9g" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/k1r3UG56vOeHme49WueC9g</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/19/hongri/87/" data-id="cjzia6wmx002a46ws105yt6q4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/08/19/hongri/88/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/19/hongri/86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/19/hongri/images/安全周刊：/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/94/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/93/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/92/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

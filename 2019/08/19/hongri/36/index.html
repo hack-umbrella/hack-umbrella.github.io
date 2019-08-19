@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="安全周刊（第36期） 安全动态： [Security_week] WebLogic反序列化漏洞（CVE-2018-2628）安全处置建议 http://mp.weixin.qq.com/s/9Kc7btt4De8IIravJkemGQ [Security_week] 每周网安十事 第95期 http://mp.weixin.qq.com/s/_nr140tFkCuRbXF-HC1GTg [Secu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/08/19/hongri/36/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="安全周刊（第36期） 安全动态： [Security_week] WebLogic反序列化漏洞（CVE-2018-2628）安全处置建议 http://mp.weixin.qq.com/s/9Kc7btt4De8IIravJkemGQ [Security_week] 每周网安十事 第95期 http://mp.weixin.qq.com/s/_nr140tFkCuRbXF-HC1GTg [Secu">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-19T09:07:37.029Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="安全周刊（第36期） 安全动态： [Security_week] WebLogic反序列化漏洞（CVE-2018-2628）安全处置建议 http://mp.weixin.qq.com/s/9Kc7btt4De8IIravJkemGQ [Security_week] 每周网安十事 第95期 http://mp.weixin.qq.com/s/_nr140tFkCuRbXF-HC1GTg [Secu">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hongri/36" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/19/hongri/36/" class="article-date">
+  <time datetime="2019-08-19T10:50:45.749Z" itemprop="datePublished">2019-08-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="安全周刊"><a href="#安全周刊" class="headerlink" title="安全周刊"></a>安全周刊</h1><p>（第36期）</p>
+<p><strong>安全动态：</strong></p>
+<p>[Security_week] WebLogic反序列化漏洞（CVE-2018-2628）安全处置建议 <a href="http://mp.weixin.qq.com/s/9Kc7btt4De8IIravJkemGQ" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/9Kc7btt4De8IIravJkemGQ</a></p>
+<p>[Security_week] 每周网安十事 第95期 <a href="http://mp.weixin.qq.com/s/_nr140tFkCuRbXF-HC1GTg" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/_nr140tFkCuRbXF-HC1GTg</a></p>
+<p>[Security_week] CVE-2018-7600 Drupal 7.x 版本代码执行 <a href="https://www.secdic.com/go/16891.html" target="_blank" rel="noopener">https://www.secdic.com/go/16891.html</a></p>
+<p>[Security_week] Go语言任意代码执行漏洞 CVE-2018-6574 <a href="https://www.secdic.com/go/16966.html" target="_blank" rel="noopener">https://www.secdic.com/go/16966.html</a></p>
+<p>[Security_week] CNNVD信息安全漏洞周报（2018年第15期） <a href="https://mp.weixin.qq.com/s/mprE00wSnECTKn4yS_D1qg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/mprE00wSnECTKn4yS_D1qg</a></p>
+<p><strong>Web安全:</strong></p>
+<p>[Web_Security] HTTPS重定向方法；Drupal漏洞poc <a href="http://mp.weixin.qq.com/s/Vq41ZZofizN8iEXtvVfHXw" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/Vq41ZZofizN8iEXtvVfHXw</a></p>
+<p>[Web_Security] 浅谈文件上传漏洞 <a href="http://mp.weixin.qq.com/s/lzuzLDKE8LrzChCByeSG9A" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/lzuzLDKE8LrzChCByeSG9A</a></p>
+<p>[Web_Security] 一次特殊场景下的鸡肋XSS  <a href="https://www.secdic.com/go/16699.html" target="_blank" rel="noopener">https://www.secdic.com/go/16699.html</a></p>
+<p>[Web_Security] 某cms任意账户密码重置漏洞分析和利用 <a href="https://www.secpulse.com/archives/70849.html" target="_blank" rel="noopener">https://www.secpulse.com/archives/70849.html</a></p>
+<p>[Web_Security] 利用缓存服务形成的SSRF和其它客户端形式渗透 <a href="https://mp.weixin.qq.com/s/LWFMvwSMHjV-fRpG826DAA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/LWFMvwSMHjV-fRpG826DAA</a></p>
+<p>[Web_Security] 利用Java反序列化漏洞在Windows上的挖矿实验 <a href="http://www.freebuf.com/articles/system/168067.html" target="_blank" rel="noopener">http://www.freebuf.com/articles/system/168067.html</a></p>
+<p>[Web_Security] 某次XSS绕过总结 <a href="https://www.secdic.com/go/16871.html" target="_blank" rel="noopener">https://www.secdic.com/go/16871.html</a></p>
+<p>[Web_Security] 记Discuz!的一个绕过技巧 <a href="https://www.secdic.com/go/16960.html" target="_blank" rel="noopener">https://www.secdic.com/go/16960.html</a></p>
+<p>[Web_Security] 渗透测试介绍|附实例 <a href="https://www.secdic.com/go/17042.html" target="_blank" rel="noopener">https://www.secdic.com/go/17042.html</a></p>
+<p>[Web_Security] PentesterLab新手教程（一）：代码注入 <a href="http://www.freebuf.com/sectool/168653.html" target="_blank" rel="noopener">http://www.freebuf.com/sectool/168653.html</a></p>
+<p><strong>渗透测试：</strong></p>
+<p>[Penetration_test] 记录强网杯2018一道内核pwn的解题思路 <a href="https://www.secdic.com/go/16537.html" target="_blank" rel="noopener">https://www.secdic.com/go/16537.html</a></p>
+<p>[Penetration_test] 防止服务器被下shift后门的思路 <a href="http://mp.weixin.qq.com/s/G38gC-B1tClNbaB5EB2uDw" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/G38gC-B1tClNbaB5EB2uDw</a></p>
+<p>[Penetration_test] 如何在CTF中少走弯路（基础篇（上）） <a href="http://mp.weixin.qq.com/s/5mI-xOaKb8s-FnyThal3lQ" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/5mI-xOaKb8s-FnyThal3lQ</a></p>
+<p>[Penetration_test] 记一次渗透测试过程中的Zabbix命令执行利用 <a href="http://www.freebuf.com/articles/web/168819.html" target="_blank" rel="noopener">http://www.freebuf.com/articles/web/168819.html</a></p>
+<p>[Penetration_test] Hack with rewrite <a href="https://mp.weixin.qq.com/s/gdAsb95QMSL1ElCkrKKjEg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/gdAsb95QMSL1ElCkrKKjEg</a></p>
+<p>[Penetration_test] powershell中使用ReflectivePEInjection绕过杀毒 <a href="https://mp.weixin.qq.com/s/7DwedaqitVrtv-3Z36LEnQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/7DwedaqitVrtv-3Z36LEnQ</a></p>
+<p>[Penetration_test] 现代版荆轲刺秦王：Struts2 REST插件漏洞分析 <a href="https://mp.weixin.qq.com/s/R9RKd0tPTxChz6A0bWH-9w" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/R9RKd0tPTxChz6A0bWH-9w</a></p>
+<p>[Penetration_test] ESP技巧：教你如何解包可执行文件 <a href="https://mp.weixin.qq.com/s/E9TuFr07rLIiDE2j-va_kw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/E9TuFr07rLIiDE2j-va_kw</a></p>
+<p>[Penetration_test] 实现一个简单的Burp验证码本地识别插件 <a href="https://mp.weixin.qq.com/s/Qlke1dxAQ8vMurAfXrGqjw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/Qlke1dxAQ8vMurAfXrGqjw</a></p>
+<p>[Penetration_test] Windows 密码抓取方式总结 <a href="https://mp.weixin.qq.com/s/As4YZ8XDWCfBfieDUU30Ow" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/As4YZ8XDWCfBfieDUU30Ow</a></p>
+<p>[Penetration_test] 如何在CTF中少走弯路（基础篇（下）） <a href="https://mp.weixin.qq.com/s/RdHbQrhJdJrbaI5MsHGpkg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/RdHbQrhJdJrbaI5MsHGpkg</a></p>
+<p>[Penetration_test] 有一种内涵叫Z-BlogGetShell漏洞分析 <a href="https://mp.weixin.qq.com/s/MdwXJtUnEuVQsjQgoyF27g" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/MdwXJtUnEuVQsjQgoyF27g</a></p>
+<p>[Penetration_test] 炒冷饭系列之利用Office文档get shell <a href="https://mp.weixin.qq.com/s/_87ajQ7-nojWNw48PiUP8A" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/_87ajQ7-nojWNw48PiUP8A</a></p>
+<p>[Penetration_test] 通过SUID提升权限 <a href="https://mp.weixin.qq.com/s/dPS3ZljKw7NiinTeHuWIVw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/dPS3ZljKw7NiinTeHuWIVw</a></p>
+<p>[Penetration_test] 记一次详细的勒索病毒分析 <a href="https://mp.weixin.qq.com/s/TznmkeU1zZU_wJSw0Jx6GQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/TznmkeU1zZU_wJSw0Jx6GQ</a></p>
+<p>[Penetration_test] Windows 密码抓取方式总结 <a href="https://mp.weixin.qq.com/s/TG7NuQdW1LT5z_XTdeHgLA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/TG7NuQdW1LT5z_XTdeHgLA</a></p>
+<p>[Penetration_test] CVE-2017-16995 Ubuntu本地提权测试（任意地址读写利用） <a href="http://www.freebuf.com/vuls/168980.html" target="_blank" rel="noopener">http://www.freebuf.com/vuls/168980.html</a></p>
+<p>[Penetration_test] 端口反向模拟 <a href="https://mp.weixin.qq.com/s/IzHcs0lYpQS14XGjBaN7GQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/IzHcs0lYpQS14XGjBaN7GQ</a></p>
+<p>[Penetration_test] 流量分析-CTF题目实战 <a href="https://mp.weixin.qq.com/s/fdoyTm9NnqzTB8liFWvInQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/fdoyTm9NnqzTB8liFWvInQ</a></p>
+<p><strong>代码审计：</strong></p>
+<p>[Code_audit] 安卓源码逆向 <a href="http://mp.weixin.qq.com/s/47JbC9iaQVUIYfnuGDzhuw" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/47JbC9iaQVUIYfnuGDzhuw</a></p>
+<p>[Code_audit] 解密混淆的PHP程序 <a href="http://mp.weixin.qq.com/s/S2QJ2HiAqPFW2wo6aUAhCA" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/S2QJ2HiAqPFW2wo6aUAhCA</a></p>
+<p>[Code_audit] 工具| WebGoat源码审计之SQL注入篇 <a href="https://mp.weixin.qq.com/s/kLOOyXMLD7w–Kk8kWlXOw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/kLOOyXMLD7w–Kk8kWlXOw</a></p>
+<p><strong>安全工具：</strong></p>
+<p>[Security_tools] Mosca – 查找错误的静态分析工具 <a href="http://mp.weixin.qq.com/s/33Qcch4a3sJxtnP14r1f_A" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/33Qcch4a3sJxtnP14r1f_A</a></p>
+<p>[Security_tools] Deep Exploit：结合机器学习的全自动渗透测试工具 <a href="http://www.freebuf.com/sectool/167844.html" target="_blank" rel="noopener">http://www.freebuf.com/sectool/167844.html</a></p>
+<p>[Security_tools] 黑客六道：SpyNote <a href="https://mp.weixin.qq.com/s/3F4czb_eRrxuPKseEJANRw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/3F4czb_eRrxuPKseEJANRw</a></p>
+<p>[Security_tools] WordBrutePress – 多线程Wordpress Bruteforcing工具 <a href="http://mp.weixin.qq.com/s/1y3RttPzaBFUpv3DYvP4iQ" target="_blank" rel="noopener">http://mp.weixin.qq.com/s/1y3RttPzaBFUpv3DYvP4iQ</a></p>
+<p>[Security_tools] Zarp – 网络攻击工具 <a href="https://mp.weixin.qq.com/s/YxgtWVuFDFYWusAdGJxWrQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/YxgtWVuFDFYWusAdGJxWrQ</a></p>
+<p>[Security_tools] WATOBO – Web应用程序安全审计工具箱 <a href="https://mp.weixin.qq.com/s/7dbiF3YL__-y1flGJBVhrg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/7dbiF3YL__-y1flGJBVhrg</a></p>
+<p>[Security_tools] 浅析加密DNS（附子域名爆破工具） <a href="https://mp.weixin.qq.com/s/qpoJzJs1XRKZ-adYjeo9oQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/qpoJzJs1XRKZ-adYjeo9oQ</a></p>
+<p>[Security_tools] WebVulScan – Web应用程序漏洞扫描程序 <a href="https://mp.weixin.qq.com/s/7B9_zZ6fT114IKhfgmpuAg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/7B9_zZ6fT114IKhfgmpuAg</a></p>
+<p>[Security_tools] Malcom – 恶意软件通信分析器 <a href="https://mp.weixin.qq.com/s/CwXqaCxBXeJuTFv4jiaYBg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/CwXqaCxBXeJuTFv4jiaYBg</a></p>
+<p>[Security_tools] pyt ：检测 Python Web 应用安全漏洞的静态扫描工具;DoxyCannon:ip隐藏 <a href="https://mp.weixin.qq.com/s/cpUhEt9lfTyOe_cyHfUaWw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/cpUhEt9lfTyOe_cyHfUaWw</a></p>
+<p><strong>视频分享:</strong></p>
+<p>[Video_share] 深度剖析数据库提权的背后玄机 <a href="https://www.bugbank.cn/live/view.html?id=111161" target="_blank" rel="noopener">https://www.bugbank.cn/live/view.html?id=111161</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/19/hongri/36/" data-id="cjzia6wlz000r46wsx8mrhijn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/08/19/hongri/37/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/19/hongri/35/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/19/hongri/images/安全周刊：/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/94/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/93/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/19/hongri/92/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
