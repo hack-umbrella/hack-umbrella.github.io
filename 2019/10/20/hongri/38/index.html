@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="安全周刊（第38期） 安全动态： [Security_week] CVE-2018-10561/62: GPON光纤路由器漏洞分析预警 https://mp.weixin.qq.com/s/H6cRTzr2FsoRK0BmKsJIwA [Security_week] 每周网安十事 第97期 https://mp.weixin.qq.com/s/XIR7umy6uBSod8z9nqOjIQ [Sec">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/10/20/hongri/38/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="安全周刊（第38期） 安全动态： [Security_week] CVE-2018-10561/62: GPON光纤路由器漏洞分析预警 https://mp.weixin.qq.com/s/H6cRTzr2FsoRK0BmKsJIwA [Security_week] 每周网安十事 第97期 https://mp.weixin.qq.com/s/XIR7umy6uBSod8z9nqOjIQ [Sec">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-20T12:02:32.430Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="安全周刊（第38期） 安全动态： [Security_week] CVE-2018-10561/62: GPON光纤路由器漏洞分析预警 https://mp.weixin.qq.com/s/H6cRTzr2FsoRK0BmKsJIwA [Security_week] 每周网安十事 第97期 https://mp.weixin.qq.com/s/XIR7umy6uBSod8z9nqOjIQ [Sec">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hongri/38" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/20/hongri/38/" class="article-date">
+  <time datetime="2019-10-20T12:02:07.146Z" itemprop="datePublished">2019-10-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="安全周刊"><a href="#安全周刊" class="headerlink" title="安全周刊"></a>安全周刊</h1><p>（第38期）</p>
+<p><strong>安全动态：</strong></p>
+<p>[Security_week] CVE-2018-10561/62: GPON光纤路由器漏洞分析预警 <a href="https://mp.weixin.qq.com/s/H6cRTzr2FsoRK0BmKsJIwA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/H6cRTzr2FsoRK0BmKsJIwA</a></p>
+<p>[Security_week] 每周网安十事 第97期 <a href="https://mp.weixin.qq.com/s/XIR7umy6uBSod8z9nqOjIQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/XIR7umy6uBSod8z9nqOjIQ</a></p>
+<p>[Security_week] 浅谈以太坊智能合约的安全漏洞 <a href="https://mp.weixin.qq.com/s/H6cRTzr2FsoRK0BmKsJIwA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/H6cRTzr2FsoRK0BmKsJIwA</a></p>
+<p>[Security_week] Spectre-NG：多个新 CPU 漏洞预警 <a href="https://mp.weixin.qq.com/s/xz0dKClBskZ6MMcOfmAf6A" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/xz0dKClBskZ6MMcOfmAf6A</a></p>
+<p>[Security_week] 季刊| 骚技术汇总精编 <a href="https://mp.weixin.qq.com/s/4JtFYNMkRGZqQp6JsWPl_w" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/4JtFYNMkRGZqQp6JsWPl_w</a></p>
+<p>[Security_week] 入侵监控设备最新漏洞附Poc工具 <a href="https://mp.weixin.qq.com/s/H6cRTzr2FsoRK0BmKsJIwA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/H6cRTzr2FsoRK0BmKsJIwA</a></p>
+<p>[Security_week] 信息安全漏洞周报（2018年第17期） <a href="https://mp.weixin.qq.com/s/o9sW81sMKFBf3MA77Y9hdg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/o9sW81sMKFBf3MA77Y9hdg</a></p>
+<p><strong>Web安全:</strong></p>
+<p>[Web_Security] 看我如何挖掘YouPorn的XSS并成功利用 <a href="http://www.freebuf.com/articles/web/169918.html" target="_blank" rel="noopener">http://www.freebuf.com/articles/web/169918.html</a></p>
+<p>[Web_Security] 使用burpsuite抓https包 <a href="https://mp.weixin.qq.com/s/p5yBNgp8KH523A6E5XF7xA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/p5yBNgp8KH523A6E5XF7xA</a></p>
+<p>[Web_Security] PHP使用了PDO还可能存在sql注入的情况 <a href="https://mp.weixin.qq.com/s/LPmE52XU0A01p4ZYv4wwzA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/LPmE52XU0A01p4ZYv4wwzA</a></p>
+<p>[Web_Security] Bypass ngx_lua_waf SQL 注入防御（多姿势） <a href="https://mp.weixin.qq.com/s/hy0eSorsxK_fKaNJ0r0glA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/hy0eSorsxK_fKaNJ0r0glA</a></p>
+<p>[Web_Security] burpsuite插件开发之检测越权访问漏洞 <a href="https://www.secdic.com/go/17640.html" target="_blank" rel="noopener">https://www.secdic.com/go/17640.html</a></p>
+<p>[Web_Security] 记录一次利用业务设计漏洞的精彩实战测试 <a href="https://mp.weixin.qq.com/s/JshlT1uxO_2gCv-0BK6Dhg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/JshlT1uxO_2gCv-0BK6Dhg</a></p>
+<p>[Web_Security] 只需通过4个NagiosXI漏洞 就可以构造一个远程代码执行 <a href="https://mp.weixin.qq.com/s/JshlT1uxO_2gCv-0BK6Dhg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/JshlT1uxO_2gCv-0BK6Dhg</a></p>
+<p>[Web_Security] 利用/绕过 PHP escapeshellarg/escapeshellcmd函数 <a href="https://www.secdic.com/go/17790.html" target="_blank" rel="noopener">https://www.secdic.com/go/17790.html</a></p>
+<p><strong>渗透测试：</strong></p>
+<p>[Penetration_test] 渗透测试神器Cobalt Strike使用教程 <a href="https://mp.weixin.qq.com/s/aHKzIVLy6EfW1pX2FVmfLQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/aHKzIVLy6EfW1pX2FVmfLQ</a></p>
+<p>[Penetration_test] ORACLE PEOPLESOFT远程执行代码：将XXE盲注到SYSTEM SHELL <a href="https://www.secdic.com/go/17589.html" target="_blank" rel="noopener">https://www.secdic.com/go/17589.html</a></p>
+<p>[Penetration_test] CTF 玩转 pwn 月度总结 <a href="https://mp.weixin.qq.com/s/H-2yLfM3rd8g9KOx-r5dpA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/H-2yLfM3rd8g9KOx-r5dpA</a></p>
+<p>[Penetration_test] 红帽杯部分Wp <a href="https://mp.weixin.qq.com/s/9rTtLoucMpaWAeniTj27Xg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/9rTtLoucMpaWAeniTj27Xg</a></p>
+<p>[Penetration_test] 了解一下，PowerShell的内网渗透之旅（一） <a href="https://mp.weixin.qq.com/s/eQ_flYcMvVZdMjNDgn2CnA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/eQ_flYcMvVZdMjNDgn2CnA</a></p>
+<p>[Penetration_test] 利用.NET反序列化漏洞获取NTLM Hashes<a href="http://www.freebuf.com/articles/system/170640.html" target="_blank" rel="noopener">http://www.freebuf.com/articles/system/170640.html</a></p>
+<p>[Penetration_test] python之paramiko模块 <a href="https://mp.weixin.qq.com/s/QdzHkWBdxVJ1U0WyJw11Cg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/QdzHkWBdxVJ1U0WyJw11Cg</a></p>
+<p><strong>代码审计：</strong></p>
+<p>[Code_audit] 代码审计 | HDWiki v6.0最新版referer注入漏洞 <a href="https://mp.weixin.qq.com/s/jb5iMmq1f54YARA5qZ67FA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/jb5iMmq1f54YARA5qZ67FA</a></p>
+<p>[Code_audit] 蝉(feng)知(wo)cms <a href="https://mp.weixin.qq.com/s/8QVM_qwAHFqJ8wdYdbjVGw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/8QVM_qwAHFqJ8wdYdbjVGw</a></p>
+<p>[Code_audit] 源码审计之缓冲区溢出漏洞 <a href="http://www.freebuf.com/vuls/170323.html" target="_blank" rel="noopener">http://www.freebuf.com/vuls/170323.html</a></p>
+<p>[Mobile_Security] 利用python开发app实战 <a href="https://www.secdic.com/go/17787.html" target="_blank" rel="noopener">https://www.secdic.com/go/17787.html</a></p>
+<p><strong>安全工具：</strong></p>
+<p>[Security_tools] PentestPackage – Pentesting脚本集合 <a href="https://mp.weixin.qq.com/s/UZHZA5GpMNSyrNCjzYaBFw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/UZHZA5GpMNSyrNCjzYaBFw</a></p>
+<p>[Security_tools] Hostscan – 用于网络扫描的PHP工具 <a href="https://mp.weixin.qq.com/s/EXOao848kUHZLKXAI-8wGQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/EXOao848kUHZLKXAI-8wGQ</a></p>
+<p>[Security_tools] 工具| Burp Suite API学习思路 <a href="https://mp.weixin.qq.com/s/WHzP47XUjKxaLN19NhinJQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/WHzP47XUjKxaLN19NhinJQ</a></p>
+<p>[Security_tools] OWTF – 攻击性Web测试框架 <a href="https://mp.weixin.qq.com/s/JKW1376dBC0orwAM2hL3KA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/JKW1376dBC0orwAM2hL3KA</a></p>
+<p>[Security_tools] Phan – PHP静态分析器 <a href="https://mp.weixin.qq.com/s/tO-5U1B8ZJAix64csT8tZQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/tO-5U1B8ZJAix64csT8tZQ</a></p>
+<p>[Security_tools] Nmap使用空闲扫描进行信息收集 <a href="https://mp.weixin.qq.com/s/CRQlVaVCU0j2tMZwnR_0cA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/CRQlVaVCU0j2tMZwnR_0cA</a></p>
+<p>[Security_tools] Whonow：一款可实时执行DNS重绑定测试的DNS服务器 <a href="http://www.freebuf.com/sectool/170740.html" target="_blank" rel="noopener">http://www.freebuf.com/sectool/170740.html</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/20/hongri/38/" data-id="ck1yy25ki000ts6wse6ul40d4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/10/20/hongri/39/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/10/20/hongri/37/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/10/20/hongri/images/安全周刊：/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/20/hongri/95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/20/hongri/94/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/20/hongri/93/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/20/hongri/92/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
